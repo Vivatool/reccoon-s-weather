@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style/style-forecast.css">
     <link rel="stylesheet" href="/style/style-news.css">
     <link rel="stylesheet" href="/style/style-reg.css">
-    <link rel="stylesheet" href="/style/fonts.css">
+    <link rel="stylesheet" href="/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -31,18 +31,18 @@
         </div>-->
         <div>
           <form class="login">
-            <button class="btn-log"><a href="pages/login.php"><i class="fa fa-sign-in"></i> Sign in</a></button>
+            <button class="btn-log"><a href="/pages/login.php"><i class="fa fa-sign-in"></i> Sign in</a></button>
           </form>
           <form class="regist">
-            <button class="btn-log"><a href="pages/registration.php"><i class="fa fa-arrow-circle-down"></i> Sign Up</a></button>
+            <button class="btn-log"><a href="/pages/registration.php"><i class="fa fa-arrow-circle-down"></i> Sign Up</a></button>
           </form>
           <!--<form class="search-btn">
 
             <button class="btn-log"><a href="login.php"><i class="fa fa-search"></i> Change location</a></button>
           </form>-->
           <form class="search">
-          <input type="text" name="search" placeholder="Change location..">
-          <button class="src-btn" type="submit"><i class="fa fa-search"></i></button>
+            <button class="src-btn" type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" name="search" placeholder="Change location..">
           </form>
           </div>
           </div>
