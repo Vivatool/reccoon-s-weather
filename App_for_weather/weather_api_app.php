@@ -7,12 +7,22 @@ $curentSityAndCodeContry = $getSityByApi['regionName'].",".$getSityByApi['countr
 
 
 define("KEYY", "c40e12e115abde1de29ceb654ff6f754");
-$request = 'http://api.openweathermap.org/data/2.5/weather?q='.$curentSityAndCodeContry.'&units=metric&APPID='.KEYY;
-$response  = file_get_contents($request);
-$AllWeather  = json_decode($response, true);
+$request = 'http://api.openweathermap.org/data/2.5/weather?q='.$curentSityAndCodeContry.'&units=metric&mode=xml&APPID='.KEYY;
+    $xml = new SimpleXMLElement(file_get_contents($request));
 
-    $icon = 'http://openweathermap.org/img/w/'.$AllWeather['weather'][0]['icon'].'.png';
-    $currentTemp = $AllWeather['main']['temp'].'°C';
-    
+    $country = $xml->city->country;
+    $city = $xml->city['name'];
+    $currentTemp = $xml->temperature['value'].'°C';
+    $icon = 'http://openweathermap.org/img/w/'.$xml->weather['icon'].'.png';
+    $weatherDescription = $xml->clouds->clouds['name'];
+    $windName = $xml->wind->speed['name'];
+    $windSpeed = $xml->wind->speed['value']."m/s";
+    $windFrom = $xml->wind->direction['name'];
+    $windFromValue = $xml->wind->direction['value'];
+    $weatherName = $xml->weather['value'];
+    $pressure = $xml->pressure['value'].' hPa';
+    $humidity = $xml->humidity['value'].' %';
+    $sunrise = $xml->city->sun['rise'];
+    $sunset = $xml->city->sun['set'];
 
 ?>
