@@ -93,8 +93,14 @@ body {
   background: linear-gradient(to left, #1c7896, #5abeac);
   height: 30px;
   margin-bottom: 2%;
-
+  padding: 20px;
 }
+
+audio {
+  width: 100%;
+  opacity: 0.8;
+}
+
 .sec-cont {
   display: flex;
   justify-content: space-between;

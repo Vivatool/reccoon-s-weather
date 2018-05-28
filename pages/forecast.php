@@ -4,35 +4,35 @@
 
 <main class="common-forecast">
     <div class="current-f-cast">
-      <h1>Weather in <?php echo $curentSity; ?></h1>
+      <h1>Weather in <?php echo $curentSity; ?>, <?php echo $country; ?></h1>
       <h2><img src="<?php echo $icon; ?>"> <?php echo $currentTemp;?> </h2>
-      <h3>Clear sky</h3>
-      <h3>19:22 May 28</h3>
+      <h3><?php echo $weatherDescription; ?></h3>
+      <h3><?php echo date('H:ia')?> <?php echo date('F')?> <?php echo date('j')?></h3>
 
     <table border="1" width="100%" cellpadding="5">
    <tr>
     <td>Wind</td>
-    <td>Light breeze, 1.8 m/s, NorthEast ( 46.5019 )</td>
+    <td><?php echo $windName; ?>, <?php echo $windSpeed; ?>, <?php echo $windFrom; ?> ( <?php echo $windFromValue; ?> )</td>
    </tr>
    <tr>
     <td>Cloudiness</td>
-    <td>Sky is clear</td>
+    <td><?php echo $weatherName; ?></td>
   </tr>
   <tr>
    <td>Pressure</td>
-   <td>1024.16 hpa</td>
+   <td><?php echo $pressure; ?></td>
  </tr>
  <tr>
   <td>Humidity</td>
-  <td>72 %</td>
+  <td><?php echo $humidity; ?></td>
 </tr>
 <tr>
  <td>Sunrise</td>
- <td>06:52</td>
+ <td><?php echo $sunrise; ?></td>
 </tr>
 <tr>
  <td>Sunset</td>
- <td>23:04</td>
+ <td><?php echo $sunset; ?></td>
 </tr>
  </table>
   </div>
