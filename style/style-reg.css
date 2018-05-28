@@ -1,0 +1,40 @@
+.form-row {
+	margin-bottom: 8px;
+	overflow: hidden;
+	font-family: "HelveticaThin", sans-serif;
+	font-size: 1.5vw;
+	text-transform: lowercase;
+	/*display: flex;*/
+
+}
+.form-row input {
+	float: right;
+	height: 19px;
+	line-height: 19px;
+	margin: 0px;
+	padding: 0px 5px;
+	width: 20vw;
+	border: 1px solid #ABADB3;
+}
+
+.reg-form {
+	width: 416px;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+.form-row input[type=submit] {
+	height:2vw;
+	width:25%;
+	line-height: 2vw;
+	background: #277264;
+	color:white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30%;
+}
+
+.form-row input[type=submit]:hover
+.form-row input[type=submit]:focus {
+	background:#5abeac;
+  color: grey;
+}

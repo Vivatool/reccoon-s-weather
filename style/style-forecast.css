@@ -1,0 +1,10 @@
+.common-forecast {
+    margin: 0 auto;
+    margin: 0 15%;
+    background: linear-gradient(to top, #2b414d, #41acd2);
+    font-family: "HelveticaThin", sans-serif;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}

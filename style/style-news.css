@@ -1,0 +1,28 @@
+.articles {
+  margin: 0 auto;
+  margin: 0 15%;
+  background: linear-gradient(to top, #59beac, #349886);
+  font-family: "HelveticaThin", sans-serif;
+  padding: 2% 5%;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+h2 {
+  font-size: 1.5vw;
+
+}
+h2>a {
+  text-decoration: none;
+  color: #2b414d;
+}
+h2>a:hover,
+h2>a:focus {
+  color: #fff;
+}
+li {
+  font-size: 1.1vw;
+}
