@@ -34,7 +34,7 @@
             <li><a href="../index.php">Home</a></li>
             <li><a href="/pages/forecast.php">Forecast</a></li>
             <li><a href="#">Account</a></li>
-            <li><a href="/pages/news.php">News</a></li>
+            <li><a href="/App_for_weather/parser_news_app.php">News</a></li>
         </ul>
     </nav>
 </footer>
