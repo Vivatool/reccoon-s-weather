@@ -15,6 +15,10 @@
 <header class="m-header" id="header">
 
 <div class="radio">
+  <audio controls autoplay>
+     <source src="http://online-kissfm.tavrmedia.ua:8000/KissFM">
+   </audio>
+
 </div>
     <div class="container">
         <a href="../index.php" class="logo"><span class="green">Raccoon's</span> Weather</a>

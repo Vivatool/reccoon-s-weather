@@ -1,17 +1,5 @@
-<?php
-
-$request = file_get_contents("http://ip-api.com/json");
-$getSityByApi = json_decode($request, true);
-$curentSity = $getSityByApi['regionName'];
-$curentSityAndCodeContry = $getSityByApi['regionName'].",".$getSityByApi['countryCode'];
+<div id="RO_Kiev" style="text-align:center;width:240px;background:#318b7b;"><a href="http://fmradio-online.ru/ua.php" id="aRK"></a></div>
 
 
-define("KEYY", "c40e12e115abde1de29ceb654ff6f754");
-$request = 'http://api.openweathermap.org/data/2.5/weather?q='.$curentSityAndCodeContry.'&units=metric&mode=xml&APPID='.KEYY;
 
-$xml = new SimpleXMLElement(file_get_contents($request));
-
-$country = $xml->city->country;
-$city = $xml->city['name'];
-$wind = $xml->wind->speed['name'];
-echo "Country: $country<br/>City: $city<br/>Wind: $wind";
+<script type="text/javascript" src="http://fmradio-online.ru/scripts/rnsK.js" charset="UTF-8"></script>
