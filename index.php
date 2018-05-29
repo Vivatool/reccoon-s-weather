@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 
 <?php include_once "App_for_weather/weather_api_app.php"?>
 
