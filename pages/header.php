@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Weather's Raccoon</title>
+    <title>Raccoon's Weather</title>
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/style-forecast.css">
